@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js Cube with Orbit Controls</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+        }
+        
+        .overlay-layer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            pointer-events: none; /* Allow mouse events to pass through */
+            transition: none; /* Disable transitions for smooth dragging */
+        }
+        
+        #overlay-back {
+            transform: translate(-50%, -50%);
+            z-index: 150;
+            opacity: 1;
+            width: 800px;
+            height: 800px;
+            /* Replace 'your-background-image.png' with your actual image file */
+            background: url('./assets/your-background-image-D3nMd_df.png') no-repeat center center;
+            background-size: contain; /* or 'cover' for different scaling */
+        }
+        
+        #overlay-front {
+            transform: translate(-50%, -50%);
+            z-index: 200;
+            opacity: 1;
+            width: 800px;
+            height: 800px;
+            /* Replace 'your-front-image.png' with your actual image file */
+            background: url('./assets/your-front-image-BT2JnQTv.png') no-repeat center center;
+            background-size: contain; /* or 'cover' for different scaling */
+        }
+        
+        canvas {
+            display: block;
+        }
+    </style>
+  <script type="module" crossorigin src="./assets/index-CU2zd4JH.js"></script>
+</head>
+<body> 
+    <!-- Parallax overlay layers - replace with your own images -->
+    <div id="overlay-back" class="overlay-layer"></div>
+    <div id="overlay-front" class="overlay-layer"></div>
+    
+</body>
+</html> 
